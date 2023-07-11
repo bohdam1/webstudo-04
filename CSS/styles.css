@@ -4,16 +4,16 @@
     --font-family-second:'Raleway', sans-serif;
 
     --text-color-primary: #212121;
-    --text-color-2: #2196F3;
-    --text-color-3: #757575;
-    --text-color-4: #000000;
-    --text-color-5: #FFFFFF;
-    --text-color-6: rgba(255, 255, 255, 0.60);
+    --color-accent: #2196F3;
+    --color-secondary: #757575;
+    --color-third: #000000;
+    --color-other: #FFFFFF;
+    --color-alfa: rgba(255, 255, 255, 0.60);
     
     --background-color-primary:#FFFFFF ;
     --background-color-second:#2F303A;
-    --background-color-3:#F5F4FA;
-    --background-color-4:#2196F3;
+    --color-background-third:#F5F4FA;
+    --color-background-accent:#2196F3;
 }
 
     
@@ -43,10 +43,10 @@ font-weight: 700;
 letter-spacing: 0.78px;
 }
 .header-page .logo-first-half {
-    color: var( --text-color-2);
+    color: var(--color-accent);
 }
 .header-page .logo-secondary-half {
-    color: var(--text-color-4);
+    color: var(--color-third);
 }
 
 /* навігація */
@@ -63,7 +63,7 @@ letter-spacing: 0.78px;
 } 
 .link:hover,
 .link:focus {
-    color: var(--text-color-2);
+    color: var(--color-accent);
 }
 /* дані */
 .data-list {
@@ -76,13 +76,13 @@ letter-spacing: 0.78px;
 
 .data-list .data-items{
    
-    color: var(--text-color-3); 
+    color: var(--color-secondary); 
        
 }
 
 .data-items:hover,
 .data-items:focus {
-    color: var(--text-color-2);
+    color: var(--color-accent);
 }
 
 .main-page{ 
@@ -94,7 +94,7 @@ letter-spacing: 0.78px;
 }
 
 .hero-title{
-    color: var(--text-color-5);
+    color: var(--color-other);
     text-align: center;
     text-transform: uppercase;
     font-size: 44px;
@@ -103,8 +103,8 @@ letter-spacing: 0.78px;
 }
 .hero-button{
     font-family: var(--font-family-primary);
-    color: var(--text-color-5);
-    background-color: var(--background-color-4);
+    color: var(--color-other);
+    background-color: var(--color-background-accent);
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -130,7 +130,7 @@ letter-spacing: 0.78px;
     text-transform: uppercase;
 }
 .subtitle-text {
-color: var(--text-color-3);
+color: var(--color-secondary);
 font-size: 14px;
 font-weight: 400;
 line-height: 1.7;
@@ -144,7 +144,7 @@ font-size: 36px;
 }
 /* СЕКЦІЯ КОМАНДА */
 .team-section {
-    background-color:var(--background-color-3);
+    background-color:var(--color-background-third);
 }
 
 .team-title{
@@ -155,7 +155,7 @@ font-size: 36px;
     letter-spacing: 0.03em;   
 }
 .team-text{
-    color: var(--text-color-3);
+    color: var(--color-secondary);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -175,8 +175,8 @@ font-size: 36px;
 
 .filter-button :focus,
 .filter-button:hover {
-    color: var(--text-color-5);
-    background-color: var(--background-color-4);
+    color: var(--color-other);
+    background-color: var(--color-background-accent);
 }
 
 .title-portfolio{
@@ -188,7 +188,7 @@ letter-spacing: 1.08px;
 }
 
 .text-portfolio{
-    color: var(--text-color-3);
+    color: var(--color-secondary);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
@@ -208,24 +208,24 @@ letter-spacing: 1.08px;
     letter-spacing: 0.78px;  
 }
 .footer-page .logo-first-half {
-    color: var( --text-color-2);
+    color: var( --color-accent);
 }
 .footer-page .logo-secondary-half {
-    color: var(--text-color-5);
+    color: var(--color-other);
 }
 
 .footer-adress{
-    color: var(--text-color-5);
+    color: var(--color-other);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.42px;  
 }
 .footer-page .data-items {
-    color: var(--text-color-6);
+    color: var(--color-alfa);
 }
 .footer-page .data-items:hover,
 .footer-page .data-items:focus {
-    color: var(--text-color-2);
+    color: var(--color-accent);
 }
 
