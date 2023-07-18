@@ -44,7 +44,7 @@ body {
 }
 /* контейнер */
 .container{
-    width: 1200px;
+    width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -52,7 +52,7 @@ body {
 
 .header-flex{
     display: flex;
-    width: 1200px;
+    width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
     align-items:center;
@@ -297,12 +297,34 @@ justify-content:space-between;
 
 
 /* портфоліо */
+.container-portfolio{
+    width: 1230px;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* контейнер навігації */
+.nav-portfolio{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 50px;
+
+}
+/* кнопки */
 .filter-button{
+    border: none;
+    padding: 6px 22px;
+
     color: var(--text-color-primary);
     background-color: var(--background-color-primary);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
+}
+.filter-button:first-child{
+padding: 6px 25px;
+border: 1px solid var(--background-color-primary);
 }
 
 .filter-button :focus,
@@ -310,16 +332,36 @@ justify-content:space-between;
     color: var(--color-other);
     background-color: var(--color-background-accent);
 }
+/* зразки робіт */
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.portfolio-element{
+   
+    width: 370px
+    
+}
+
 
 .title-portfolio{
-color: var(--text-color-primary);
-font-size: 18px;
-font-weight: 700;
-line-height: 2;
-letter-spacing: 1.08px;
+    margin-top: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-bottom: 10px;
+
+    color: var(--text-color-primary);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
 }
 
 .text-portfolio{
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 20px;
     color: var(--color-secondary);
     font-size: 16px;
     font-weight: 400;
