@@ -16,8 +16,7 @@
         <div class="header-flex">
             <div class="header-flex-nav">
                 <a class="logo" href="/index.html">
-                    <span class="logo-first-half">Web</span>
-                    <span class="logo-secondary-half">Studio</span>
+                    <span class="logo-first-half">Web</span><span class="logo-secondary-half">Studio</span>
                  </a>
                 <nav>
                     <ul class="nav-list">
@@ -41,14 +40,14 @@
     </header>
     <main class="main-page">
         <section class="hero"><!-- герой -->
-            <div class="container">
+            <div class="container hero-container">
                 <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
                 <button class="hero-button" type="button">Замовити послугу</button>
             </div> 
         </section>
         <section>
-            <div class="container">
-                <h2 class="hidden-title">Наші переваги</h2>
+            <div class="container advantages-container">
+                <h2 hidden class="hidden-title">Наші переваги</h2>
                 <ul class="flex-box">
                     <li class="hidden-text">
                         <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -71,7 +70,7 @@
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="container container-img">
                 <h2 class="main-title">Чим ми займаємося</h2>
                 <ul class="flex-box-img">
                     <li><img src="./images/1.jpg"
@@ -91,36 +90,47 @@
             </div>
         </section>  
         <section class="team-section">
-            <div class="container">
+            <div class="container team-container">
                 <h2 class="main-title">Наша команда</h2>
                 <ul class="flex-box-team">
                     <li class="team-box">
                         <img src="./images/7.jpg"
                         alt="член команди"
                         width="270">
-                        <h3 class="team-title">Ігор Дем'яненко</h3>
-                        <p class="team-text">Product Designer</p>
+                        <div class="team-information">
+                            <h3 class="team-title">Ігор Дем'яненко</h3>
+                            <p class="team-text">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-box">
                         <img src='./images/6.jpg'
                         alt="член команди"
                         width="270">
-                        <h3 class="team-title" >Ольга Рєпіна</h3>
-                        <p class="team-text">Frontend Developer</p>
+                        <div class="team-information">
+
+                            <h3 class="team-title" >Ольга Рєпіна</h3>
+                            <p class="team-text">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-box">
                         <img src='./images/5.jpg'
                         alt="член команди"
                         width="270">
-                        <h3 class="team-title">Микола Тарасов</h3>
-                        <p class="team-text">Marketing</p>
+                        <div class="team-information">
+
+                            <h3 class="team-title">Микола Тарасов</h3>
+                            <p class="team-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-box">
                         <img src='./images/4.jpg'
                         alt="член команди"
                         width="270">
-                        <h3 class="team-title">Михайло Єрмаков</h3>
-                        <p class="team-text">UI Designer</p>
+                        <div class="team-information">
+                            <h3 class="team-title">Михайло Єрмаков</h3>
+                            <p class="team-text">UI Designer</p>
+
+                        </div>
                     </li>
     
                     
@@ -132,26 +142,28 @@
     </main>
     
     <footer class="footer-page">
-        <div class="container">
+        <div class="container container-footer">
             <a  class="logo" href="/index.html">
-                <span class="logo-first-half">Web</span>
-                <span class="logo-secondary-half">Studio</span>
+                <span class="logo-first-half">Web</span><span class="logo-secondary-half">Studio</span>
             </a>
-            <address class="footer-adress">
-                м. Київ, Бульвар Лесі Українки, б. 26, 
-            </address>
-            <address>
-                <ul>
-                    <li>
-                    <a class="data-items" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li>
-                        <a class="data-items" href="tel:+380961111111">+38 096 111 11 11</a>
-                    
-                    </li>
-    
-                </ul>
-            </address>
+            <div class="container-address">
+                <address class="footer-adress footer-magin">
+                    м. Київ, Бульвар Лесі Українки, б. 26, 
+                </address>
+                <address>
+                    <ul>
+                        <li class="footer-magin">
+                        <a class="data-items  " href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a class="data-items" href="tel:+380961111111">+38 096 111 11 11</a>
+                        
+                        </li>
+        
+                    </ul>
+                </address>
+
+            </div>
 
         </div>
 

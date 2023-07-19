@@ -164,13 +164,18 @@ li.margin-on-header:last-child{
 /* герой */
 .hero {
     background-color: var(--background-color-second);
-    height: 600px
+    min-height: 600px
 }
 
+.hero-container{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
 .hero-title{
     display: block;
-    padding-top: 200px;
+    
+    
 
     margin-bottom: 50px;
     color: var(--color-other);
@@ -181,6 +186,7 @@ li.margin-on-header:last-child{
     line-height: 1.4;
 }
 .hero-button{
+    border: var(--color-accent);
     border-radius: 4px;
     padding: 10px 32px  10px;
     margin: 0 auto;
@@ -201,7 +207,8 @@ li.margin-on-header:last-child{
     
 
 }
-.hero-button:hover {
+.data-items:hover,
+.data-items:focus {
     opacity: 0.8;
 }
 
@@ -212,13 +219,18 @@ li.margin-on-header:last-child{
 }
 .flex-box {
     display: flex;
-
+    justify-content: space-between;
+}
+.advantages-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
 }
 .hidden-text{
-margin-right: 30px;
-width: 270px;
-padding-top: 94px;
-padding-bottom: 94px;
+    box-sizing: content-box;
+    margin-right: 30px;
+    width: 270px;
+    
 }
 .hidden-text:last-child{
     margin-right: 0px;
@@ -252,9 +264,11 @@ line-height: 1.7;
     font-size: 36px;
 }
 /* секція з зображеннями */
+.container-img{
+    padding-bottom: 94px;  
+}
 .flex-box-img{
 display: flex;
-padding-bottom: 94px;
 justify-content:space-between;
 }
 
@@ -262,9 +276,17 @@ justify-content:space-between;
 .team-section {
     background-color:var(--color-background-third);
 }
+.team-container{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 .flex-box-team{
     display: flex;
-    padding-bottom: 94px;
+    justify-content:space-between;
+}
+.team-information{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-box{
@@ -275,8 +297,11 @@ justify-content:space-between;
     border-bottom-right-radius: 4px;
     box-shadow: 0px 1px 3px var(--color-secondary);
 }
+.team-box:last-child{
+    margin-right: 0;
+}
 .team-title{
-    padding-top: 30px;
+    
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -286,7 +311,7 @@ justify-content:space-between;
 
 }
 .team-text{
-    padding-bottom: 30px;
+    
     color: var(--color-secondary);
     font-weight: 400;
     font-size: 16px;
@@ -313,19 +338,19 @@ justify-content:space-between;
 }
 /* кнопки */
 .filter-button{
+    border-radius: 4px;
     border: none;
     padding: 6px 22px;
+    border: 1px solid var(--background-color-primary);
+
 
     color: var(--text-color-primary);
-    background-color: var(--background-color-primary);
+    background-color: var(---color-background-third);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
 }
-.filter-button:first-child{
-padding: 6px 25px;
-border: 1px solid var(--background-color-primary);
-}
+
 
 .filter-button :focus,
 .filter-button:hover {
@@ -338,6 +363,19 @@ border: 1px solid var(--background-color-primary);
     flex-wrap: wrap;
     justify-content:space-between;
 }
+.container-element{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.container-element:nth-child(3n){
+    margin-right: 0;
+}
+.container-element:nth-last-child(-n + 3){
+margin-bottom: 0;
+}
+.portfolio-information{
+    padding: 20px 24px ;
+}
 .portfolio-element{
    
     width: 370px
@@ -346,9 +384,7 @@ border: 1px solid var(--background-color-primary);
 
 
 .title-portfolio{
-    margin-top: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
+   
     margin-bottom: 10px;
 
     color: var(--text-color-primary);
@@ -359,9 +395,7 @@ border: 1px solid var(--background-color-primary);
 }
 
 .text-portfolio{
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 20px;
+    
     color: var(--color-secondary);
     font-size: 16px;
     font-weight: 400;
@@ -375,10 +409,20 @@ border: 1px solid var(--background-color-primary);
 .footer-page{
     background-color: var(--background-color-second);
 }
+.container-footer{
+padding-top: 60px;
+padding-bottom: 60px;
+}
+.container-address{
+display: flex;
+flex-direction:column;
+}
+
+
 .footer-page .logo{
     display: block;
  margin-bottom: 20px ;
- padding-top: 60px;
+ 
 
     font-family: var(--font-family-second);
     font-size: 26px;
@@ -392,10 +436,7 @@ border: 1px solid var(--background-color-primary);
     color: var(--color-other);
 }
 
-.footer-adress{
-    display: block;
-    margin-bottom: 9px;
-}
+
 
 .footer-adress{
     color: var(--color-other);
@@ -404,18 +445,23 @@ border: 1px solid var(--background-color-primary);
     line-height: 1.7;
     letter-spacing: 0.42px;  
 }
-.footer-page .data-items {
-    display: block;
-    margin-bottom: 9px;
+.footer-page .data-items  {
+
 
     color: var(--color-alfa);
-    
+
 }
-.footer-page .data-items:last-child{
-margin-bottom: 0;
-}
+
+  
+/* .footer-page .data-items:last-child{
+margin-bottom: 0; */
+
+
 .footer-page .data-items:hover,
 .footer-page .data-items:focus {
     color: var(--color-accent);
 }
 
+.footer-magin{
+    margin-bottom: 9px;  
+}
